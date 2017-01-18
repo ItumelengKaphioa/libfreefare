@@ -18,7 +18,6 @@ ENDIF(WIN32)
 if(MINGW)
   # force MinGW-w64 in 32bit mode
   add_definitions("-m32")
-  add_definitions("-DNOCRYPT")
   set(CMAKE_SHARED_LINKER_FLAGS -m32)
   set(CMAKE_EXE_LINKER_FLAGS -m32)
 endif(MINGW)
